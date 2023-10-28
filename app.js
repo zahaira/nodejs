@@ -7,7 +7,7 @@ const { render } = require('ejs');
 //express app
 const app  = express();
 //connect to mongodb
-const dbURI = 'mongodb+srv://zahairajaada:JV119PLD3UojBTeG@nodejs.5eyyzy3.mongodb.net/nodejs?retryWrites=true&w=majority';
+const dbURI = 'My db URL';
 mongoose.connect(dbURI, {useNewUrlParser:true, useUnifiedTopology:true}).then((result) => app.listen(3000)
 ).catch((err)=>console.log(err));
 //register view engine
